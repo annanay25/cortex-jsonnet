@@ -27,5 +27,9 @@
        (import 'dashboards/reads-resources.libsonnet') +
        (import 'dashboards/writes-resources.libsonnet')) +
 
+    (if $._config.insights_dashboards_enabled then
+      (import 'dashboards/insights.libsonnet')
+     else {}) +
+
     { _config:: $._config },
 }

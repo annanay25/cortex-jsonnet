@@ -42,5 +42,8 @@
 
     // Whether resources dashboards are enabled (based on cAdvisor metrics).
     resources_dashboards_enabled: false,
+
+    // Whether insights dashboards are enabled
+    insights_dashboards_enabled: true,
   },
 }
